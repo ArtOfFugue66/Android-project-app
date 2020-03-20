@@ -7,13 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.Toast;
+
+import java.util.List;
 
 // TODO: get data of dummy objects
 // TODO: display object names in ListView
 // TODO: create onClickListener() for every item in the ListView
 // TODO: make item onClick() method which launches a pop-up with detailed object data
 public class MainActivity extends AppCompatActivity {
+    private PortServiceDict portsServicesDict;
+    private List<MockServer> serverList = null;
+
+    public MainActivity() {
+        portsServicesDict = PortServiceDict.getInstance();
+        serverList = null;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,5 +37,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, ToDoActivity.class));
             }
         });
+
+        List<Integer> portList1 = null; portList1.add(22); portList1.add(23); portList1.add(25); portList1.add(80);
+        serverList.add(new MockServer(portList1));
+        List<Integer> portList2 = null; portList2.add(22); portList2.add(23); portList2.add(37); portList2.add(53);
+        serverList.add(new MockServer(portList2));
     }
 }
