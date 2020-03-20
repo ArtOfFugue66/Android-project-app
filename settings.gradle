@@ -1,0 +1,2 @@
+rootProject.name='ServerStateMonitor'
+include ':app'
