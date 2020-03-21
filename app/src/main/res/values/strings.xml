@@ -1,6 +1,12 @@
 <resources>
     <string name="app_name">ServerStateMonitor</string>
     <string name="app_logo_desc">Centered logo in ImageView</string>
-    <string name="version_textview">v1.0.0</string>
+    <string name="nav_textview_devs_text">Managed devices</string>
+    <string name="nav_textview_item_detail_text">Item details</string>
+    <string name="nav_textview_stats_text">Statistics</string>
+    <string name="nav_textview_to_do_text">To do</string>
+    <string name="nav_textview_main_text">Home</string>
     <string name="todo_button_text">To do</string>
+    <string name="devices_btn_text">View managed devices</string>
+    <string name="stats_btn_text">View statistics</string>
 </resources>

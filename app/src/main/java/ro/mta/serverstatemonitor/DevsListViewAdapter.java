@@ -5,7 +5,7 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 // Custom Adapter
-public class CustomListViewAdapter extends BaseAdapter {
+public class DevsListViewAdapter extends BaseAdapter {
 
     @Override
     public int getCount() {
