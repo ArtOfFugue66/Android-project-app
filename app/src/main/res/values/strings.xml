@@ -9,4 +9,14 @@
     <string name="todo_button_text">To do</string>
     <string name="devices_btn_text">View managed devices</string>
     <string name="stats_btn_text">View statistics</string>
+
+    <string name="dev_image_desc">Device image</string>
+    <string name="dev_name_text">Device name</string>
+    <string name="dev_brand_text">Device brand</string>
+    <string name="dev_ip_text">Device IP</string>
+    <string name="dev_location_text">Device location</string>
+    <string name="dev_type_text">Device type</string>
+    <string name="todo_task_text">Todo task</string>
+    <string name="todo_btn_text">Done</string>
+    <string name="add_task_btn_text">Add Task</string>
 </resources>

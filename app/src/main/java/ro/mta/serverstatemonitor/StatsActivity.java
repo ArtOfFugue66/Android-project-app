@@ -1,4 +1,4 @@
-package ro.mta.serverstatemonitor.activities;
+package ro.mta.serverstatemonitor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,22 +8,23 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import ro.mta.serverstatemonitor.R;
-
-public class DevsActivity extends AppCompatActivity {
+public class StatsActivity extends AppCompatActivity {
+    Button home_btn = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         // remove notification bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_devs);
+        setContentView(R.layout.activity_stats);
 
-        final Button home_btn = findViewById(R.id.home_btn_devs);
+        home_btn = (Button)findViewById(R.id.home_btn_stats);
         home_btn.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                // start ToDoActivity from MainActivity
-                startActivity(new Intent(DevsActivity.this, MainActivity.class));
+            @Override
+            public void onClick(View view) {
+                Intent home_intent = new Intent(StatsActivity.this, MainActivity.class);
+                startActivity(home_intent);
             }
         });
     }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.ToDoActivity">
+    tools:context=".ToDoActivity">
 
     <Button
         android:id="@+id/devs_btn_to_do"
@@ -40,4 +40,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/background_transparent" />
+
+    <ListView
+        android:id="@+id/todo_listview"
+        android:layout_width="401dp"
+        android:layout_height="61dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/logo_imageview_to_do"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/logo_imageview_to_do" />
 </androidx.constraintlayout.widget.ConstraintLayout>
