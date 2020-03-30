@@ -14,7 +14,8 @@
         android:layout_marginEnd="28dp"
         android:text="@string/nav_textview_devs_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="28dp" />
 
     <TextView
         android:id="@+id/nav_textview_to_do"
@@ -25,7 +26,8 @@
         android:text="@string/nav_textview_to_do_text"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="28dp" />
 
     <ImageView
         android:id="@+id/logo_imageview_to_do"
@@ -39,12 +41,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/background_transparent" />
+        app:srcCompat="@drawable/background_transparent"
+        android:layout_marginLeft="135dp" />
 
     <ListView
         android:id="@+id/todo_listview"
-        android:layout_width="401dp"
-        android:layout_height="61dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/logo_imageview_to_do"
         app:layout_constraintStart_toStartOf="parent"

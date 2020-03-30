@@ -1,5 +1,8 @@
 package ro.mta.serverstatemonitor;
 
+/**
+ * Class representing a device (PC / Server / Datacenter)
+ */
 public class Device {
     private String name;
     private String brand;
@@ -45,23 +48,4 @@ public class Device {
         return image;
     }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setIp(String ip) {
-        this.ip = ip;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public void setImage(int image) {
-        this.image = image;
-    }
 }
